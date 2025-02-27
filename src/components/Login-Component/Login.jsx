@@ -28,7 +28,7 @@ const Login = () => {
     password : '',
     confirmPass : ''
   });
-
+  
   const togglePasswordVisibility = () => {
     setShowPassword(!password);
   };
@@ -122,21 +122,15 @@ const handleLogin = () => {
               },1000);
             }else {
               toast.error(data.message);
-            }
-       
-        
+            }      
       }catch (error) {
         console.error('Error:', error);
       }
-
-    }
-
-     
+    }   
  }
 
   return (
-    <>
-     
+    <>    
       <div className="flex  justify-center items-center h-screen">
         <div className="bg-[#242529] w-100 h-[616px] rounded-md">
           <div className="p-5">
